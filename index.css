@@ -5,11 +5,11 @@
     font-family: 'mydigitalfont';
     src: url('fonts/digital-7.ttf');
 }
-    body {
+
+body {
     background-color: #023047;
     color: white;
     font-family: Verdana, Tahoma, sans-serif;
-    /* font-family: 'mydigitalfont'; */
     text-align: center;
 }
 
@@ -22,9 +22,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
-.conts{
+
+.conts {
     /* border: 1px solid white; */
     width: 200px;
     height: 350px;
@@ -37,7 +38,7 @@
 .head {
     font-size: 42px;
     /* border: 1px solid white; */
-    margin:0;
+    margin: 0;
     width: 180px;
     text-align: center;
 }
@@ -51,10 +52,20 @@
     /* margin: 0px auto 20px auto; */
 }
 
+.score {
+    border: 1px solid white;
+    font-size: 45px;
+    font-family: 'mydigitalfont';
+    width:160px;
+    justify-self: center;
+    overflow:hidden ;
+    /* display:none; */
+}
+
 .btn-group {
     display: flex;
     justify-content: space-evenly;
-    gap:15px;
+    gap: 15px;
 }
 
 .btn {
@@ -65,20 +76,23 @@
     padding: 10px;
     font-size: 18px;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #022536;
 }
-.reset-btn{
+
+.reset-btn {
     width: 556px;
-    margin:0;
-    padding:5px 0;
-    color:#023047;
+    margin: 0;
+    padding: 5px 0;
+    color: #023047;
     font-size: 18px;
     font-weight: bold;
-    border:none;
+    border: none;
 
 }
-.reset-btn:hover{
+
+.reset-btn:hover {
     background-color: #57a7cf;
-    
+
 }
