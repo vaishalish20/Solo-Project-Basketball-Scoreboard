@@ -19,6 +19,10 @@ function add4ToLeft() {
     leftScoreEl.textContent = leftScore;
 
 }
+function minus3ToLeft() {
+    leftScore -= 3;
+    leftScoreEl.textContent = leftScore;
+}
 function add1ToRight() {
     rightScore += 1
     rightScoreEl.textContent = rightScore;
@@ -33,6 +37,10 @@ function add4ToRight() {
     rightScore += 4
     rightScoreEl.textContent = rightScore;
 
+}
+function minus3ToRight() {
+    rightScore -= 3;
+    rightScoreEl.textContent = rightScore;
 }
 function newGame() {
     leftScoreEl.textContent = 0;
