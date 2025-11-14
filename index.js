@@ -49,5 +49,23 @@ function newGame() {
     leftScore = 0;
     rightScore = 0;
 
+}
+let leftHead = document.getElementById("left-head")
+let rightHead = document.getElementById("right-head")
 
+console.log(leftHead);
+console.log(rightHead);
+
+function Check() {
+    if (leftScore > rightScore) {
+        console.log("player 1 wins");
+        
+    }
+    
+    else if (rightScore > leftScore){
+        console.log("player 2 wins");
+    }
+        
+    else
+        alert("Tie")
 }

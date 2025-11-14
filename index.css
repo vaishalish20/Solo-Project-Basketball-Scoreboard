@@ -37,7 +37,7 @@ body {
 }
 
 .head {
-    font-size: 42px;
+    font-size: 28px;
     /* border: 1px solid white; */
     margin: 0;
     width: 180px;
@@ -84,10 +84,19 @@ body {
     background-color: #022536;
 }
 
+.action-btns{
+    /* border: 1px solid white; */
+    width: 554px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
 .reset-btn {
-    width: 556px;
-    margin: 0;
-    padding: 5px 0;
+    border: 1px solid white;
+    width: 264px;
+     padding: 5px 0;
     color: #023047;
     font-size: 19px;
     font-weight: bold;

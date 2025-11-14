@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div id="left-cont" class="conts">
-            <h3 class="head">HOME</h3>
+            <h3 class="head" id="left-head">Player 1</h3>
             <div class="scorecard">
                 <h4 class="score" id="left-score">0</h4>
             </div>
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div id="right-cont" class="conts">
-            <h3 class="head">GUEST</h3>
+            <h3 class="head" id="right-head">Player 2</h3>
             <div class="scorecard">
                 <h4 class="score" id="right-score">0</h4>
             </div>
@@ -35,7 +35,10 @@
             </div>
         </div>
     </div>
-    <button class="reset-btn" onclick="newGame()">New Game</button>
+    <div class="action-btns">
+        <button class="reset-btn" onclick="newGame()">New Game</button>
+        <button class="reset-btn" onclick="Check()">Check</button>
+    </div>
     <script src="index.js"></script>
 </body>
 
