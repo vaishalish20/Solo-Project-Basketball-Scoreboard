@@ -1,10 +1,15 @@
 /* *{
     border:1px solid white;
-} */
-body {
+    } */
+@font-face {
+    font-family: 'mydigitalfont';
+    src: url('fonts/digital-7.ttf');
+}
+    body {
     background-color: #023047;
     color: white;
     font-family: Verdana, Tahoma, sans-serif;
+    /* font-family: 'mydigitalfont'; */
     text-align: center;
 }
 
