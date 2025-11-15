@@ -4,62 +4,62 @@ let rightScoreEl = document.getElementById("right-score");
 let leftScore = 0;
 let rightScore = 0;
 
-    const leftHead = document.getElementById("left-head")
-    const rightHead = document.getElementById("right-head")
+const leftHead = document.getElementById("left-head")
+const rightHead = document.getElementById("right-head")
 
 function add1ToLeft() {
-        leftHead.style.color = "white";
-    rightHead.style.color = "white";
+resetColor()
     leftScore += 1
     leftScoreEl.textContent = leftScore;
+    // checkWinner()
 
 }
 function add2ToLeft() {
-        leftHead.style.color = "white";
-    rightHead.style.color = "white";
+resetColor()
     leftScore += 2
     leftScoreEl.textContent = leftScore;
+    // checkWinner()
 
 }
 function add4ToLeft() {
-        leftHead.style.color = "white";
-    rightHead.style.color = "white";
+resetColor()
     leftScore += 4
     leftScoreEl.textContent = leftScore;
+    // checkWinner()
 
 }
 function minus3ToLeft() {
-        leftHead.style.color = "white";
-    rightHead.style.color = "white";
+resetColor()
     leftScore -= 3;
     leftScoreEl.textContent = leftScore;
+    // checkWinner()
 }
 function add1ToRight() {
-        leftHead.style.color = "white";
-    rightHead.style.color = "white";
+resetColor()
     rightScore += 1
     rightScoreEl.textContent = rightScore;
+    // checkWinner()
 
 }
 function add2ToRight() {
-        leftHead.style.color = "white";
-    rightHead.style.color = "white";
+resetColor()
     rightScore += 2
     rightScoreEl.textContent = rightScore;
+    // checkWinner()
 
 }
 function add4ToRight() {
-        leftHead.style.color = "white";
-    rightHead.style.color = "white";
+resetColor()
     rightScore += 4
     rightScoreEl.textContent = rightScore;
+    // checkWinner()
 
 }
 function minus3ToRight() {
-        leftHead.style.color = "white";
-    rightHead.style.color = "white";
+resetColor()
     rightScore -= 3;
     rightScoreEl.textContent = rightScore;
+    // checkWinner()
 }
 function newGame() {
     leftScoreEl.textContent = 0;
@@ -68,13 +68,15 @@ function newGame() {
     leftScore = 0;
     rightScore = 0;
 
-    leftHead.style.color = "white";
-    rightHead.style.color = "white";
+resetColor()
 
 }
+function resetColor() {
+    leftHead.style.color = "white";
+    rightHead.style.color = "white";
+}
 
-
-function Check() {
+function checkWinner() {
 
     if (leftScore > rightScore) {
         leftHead.style.color = "green"; // Change to your desired color
@@ -85,9 +87,9 @@ function Check() {
         rightHead.style.color = "green"; // Change to your desired color
     }
 
-    else{
-     leftHead.style.color = "yellow";
-    rightHead.style.color = "yellow";
+    else {
+        leftHead.style.color = "yellow";
+        rightHead.style.color = "yellow";
     }
-   
+
 }
